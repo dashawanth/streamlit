@@ -681,7 +681,8 @@ class Dashboard:
         total_retail_Monthly_sub = merged_df[merged_df["description"].str.contains("BrainTap Monthly Subscription")].shape[0]
         total_retail_yearly_sub =merged_df[merged_df["description"].str.contains("BrainTap Yearly Subscription")].shape[0]
 
-        
+        filtered_sub_df = subscriptions_df[(subscriptions_df["trial_end"] >= start_date) & (subscriptions_df["trial_end"] <= end_date)]
+        filtered_cust_sub_df = filtered_sub_df.merge(customers_df, left_on="customer_id", right_on="id", how="inner")        
 
 
         # Calculate the total number of active, inactive, trialing, past due, paused, and incomplete expired subscriptions
