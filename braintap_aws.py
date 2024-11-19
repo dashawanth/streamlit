@@ -15,10 +15,10 @@ class BraninTapApp:
         self.s3_config = {
             "bucket_name": "demo-bucket-d1",
             "files": {
-                "summary": "demo-bucket-d1/summary.csv",
-                "users": "demo-bucket-d1/users.csv",
-                "goals": "demo-bucket-d1/goals.csv",
-                "authors": "demo-bucket-d1/authors.csv"
+                "summary": "summary.csv",
+                "users": "users.csv",
+                "goals": "goals.csv",
+                "authors": "authors.csv"
             }
         }
 
