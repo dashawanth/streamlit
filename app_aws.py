@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
-from braintap import BraninTapApp
-from stripe import Dashboard
+from braintap_aws import BraninTapApp
+from stripe_sr_aws_fill_new import Dashboard
 
 # Configure the Streamlit page layout and settings
 st.set_page_config(
